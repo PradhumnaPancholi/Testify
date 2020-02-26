@@ -2,10 +2,14 @@
   "name": "testify",
   "version": "1.0.0",
   "description": "a minimalistic javascript testing framework",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Pradhumna Pancholi",
-  "license": "ISC"
+  "license": "ISC",
+  "type": "module",
+  "bin": "./src/cli.js",
+  "exports":{
+    ".": "./src/runner.js"
+  }
 }
